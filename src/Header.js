@@ -38,7 +38,7 @@ function Header() {
 				<div className="row-box flex flex-wrap items-center justify-between max-[768px]:justify-center">
 
 					<div ref={navSection} className={NavisScrolled ? "visible transition duration-500 delay-[2500ms]" : "invisible transition duration-500"}>
-						<a href="/">
+						<a href="#">
 							<img src={logo} alt="Logo Image" className="w-12" />
 						</a>
 					</div>
