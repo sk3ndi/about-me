@@ -1,0 +1,147 @@
+{
+  "work_category": [
+    {
+      "id": 1,
+      "name": "Wordpress",
+      "work_lists": [
+        {
+          "id": 1,
+          "title": "The Naked Peach",
+          "url": "https://thenakedpeach.com/",
+          "img": "TheNakedPeach.png"
+        },
+        {
+          "id": 2,
+          "title": "Jen Said",
+          "url": "https://jensaid.com/",
+          "img": "Jensaid.png"
+        },
+        {
+          "id": 3,
+          "title": "Butterfly Farms",
+          "url": "https://butterflyfarms.org/",
+          "img": "HomeButterflyFarms.png"
+        },
+        {
+          "id": 4,
+          "title": "Panadero Bakeshop",
+          "url": "https://panaderobakeshop.ph/",
+          "img": "Panadero.png"
+        },        
+        {
+          "id": 5,
+          "title": "Tyson Russell",
+          "url": "https://tysonrussell.com/",
+          "img": "TysonRussell.png"
+        },
+        {
+          "id": 6,
+          "title": "Ride Vecto",
+          "url": "https://ride-vecto.com/",
+          "img": "RideVecto.png"
+        },
+        {
+          "id": 7,
+          "title": "De Bonte Koe",
+          "url": "https://debontekoe.ph/",
+          "img": "DeBonteKoe.png"
+        },                       
+        {
+          "id": 8,
+          "title": "Trabahunters",
+          "url": "https://trabahunters.fhphilippines.org/",
+          "img": "Trabahunters.png"
+        }
+      ]
+    },
+
+
+    {
+      "id": 2,
+      "name": "Web Design",
+      "work_lists": [
+        {
+          "id": 1,
+          "title": "Illumedia",
+          "url": "",
+          "img": "illumedia_page.jpg"
+        },
+        {
+          "id": 2,
+          "title": "Helmet Shop",
+          "url": "",
+          "img": "Suomy.jpg"
+        },
+        {
+          "id": 3,
+          "title": "Onitronics",
+          "url": "",
+          "img": "Onitronics.jpg"
+        },
+        {
+          "id": 4,
+          "title": "Urban Tech",
+          "url": "",
+          "img": "home_page_v2.jpg"
+        },
+        {
+          "id": 5,
+          "title": "Iron Mafia Staffing",
+          "url": "",
+          "img": "IronMafia.jpg"
+        },
+        {
+          "id": 6,
+          "title": "IC Warriors",
+          "url": "",
+          "img": "icwarriors.png"
+        },
+        {
+          "id": 7,
+          "title": "MGB Lawyers",
+          "url": "",
+          "img": "MGB.png"
+        },
+        {
+          "id": 8,
+          "title": "MWM",
+          "url": "",
+          "img": "MWM.png"
+        },                
+        {
+          "id": 9,
+          "title": "Accucare",
+          "url": "",
+          "img": "Accucare.png"
+        }
+      ]
+    },
+
+    {
+      "id": 3,
+      "name": "Shopify",
+      "work_lists": [
+        {
+          "id": 1,
+          "title": "Valmori",
+          "url": "https://vhc-sleep.com.au",
+          "img": "Valmori.png"
+        },
+        {
+          "id": 2,
+          "title": "Lazy Cat",
+          "url": "https://lazy-cat.com.au/",
+          "img": "Lazycat.png"
+        },
+        {
+          "id": 3,
+          "title": "Hi Pilates",
+          "url": "https://hipilates.com.au/",
+          "img": "HiPilates.png"
+        }        
+      ]     
+    }
+
+
+  ]
+}

@@ -1,0 +1,291 @@
+/*
+
+Version: 1.0.00
+Description:
+Author: Ken Ken - sk3ndi
+Author URI: albertsweb.space
+
+*/
+
+/*** Get Tailwind CSS ***/
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/*** Fonts To Be Used ***/
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;600;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+html {
+	margin: 0;
+	padding: 0;
+    background: #ebecf1;
+
+    scroll-behavior: smooth;
+    --scroll-behavior: smooth !important;
+
+    /*
+    background: url('/assets/img/bg-1.svg');
+    background-attachment: fixed;
+    */
+}
+
+body,
+h1,h2,h3,h4,h5,h6 {
+
+    font-size: 100%;
+    line-height: 1.5em;
+    font-family: 'Montserrat', sans-serif;
+    color: #333333;
+
+}
+
+[class*="uk-animation-"] {
+    animation-duration: 1.2s;
+}
+
+a {
+
+   &:hover {
+    text-decoration: none;
+   } 
+}
+
+
+.menu-list > li > a {
+    position: relative;
+    display: block;
+
+    &::before {
+        content: '';
+        display: block;
+        position: absolute;
+        left: 0;
+        right: 100%;
+        bottom: -5px;
+        height: 1px;
+        background: #5d8a8f;
+        transition: .3s ease-in-out;
+        transition-property: right;
+    }
+    &:hover {
+        &::before {
+            right: 0;
+        }
+    }
+
+}
+
+
+/* Hero Section */
+#hero {
+    
+    .title {
+        /* font-size: 75px; */
+        font-weight: 600;
+        line-height: 1em;
+        letter-spacing: 10px;
+        margin: 0 0 5px 0;
+        color: #113C4A;   
+    }
+
+    .subheading {
+        font-size: 28px;
+        font-weight: 600;
+        line-height: 1.5em;
+        margin: 0 0 5px 0;
+        color: #333333;        
+    }
+
+    .text-info {
+        width: 100%;
+        max-width: 700px;
+        font-family: 'Poppins', sans-serif;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 1.5em;
+        margin: 0 auto 30px auto;
+        color: #555555;
+    }
+
+    .mini-boxes {
+
+            a {
+                display: flex;
+                align-items: center;
+                background: rgba(51,51,51,.08);
+                font-size: 12px;
+                min-width: 50px;
+                height: 22px;
+                justify-content: center;
+                text-decoration: none;
+                color: #333333;
+                padding: 4px 10px;
+                border-radius: 5px;
+                box-shadow: 0 1px 1.5px rgba(0, 0, 0, 0.15);
+                transition: .4s ease-in-out;
+
+                &:hover {
+                    background: #113C4A; 
+                    color: #ffffff;
+                }
+            }
+    }
+}
+
+
+
+/* Procjects Section */
+#projects {
+
+    .title {
+        color: #113C4A;
+        margin: 0 0 5px 0;
+        font-weight: 600;
+        line-height: 1em;
+    }
+
+    .text-info {
+        width: 100%;
+        max-width: 700px;
+        font-family: 'Poppins', sans-serif;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 1.5em;
+        margin: 30px auto 30px auto;
+        color: #555555;
+    }
+
+
+    .slick-list {
+        /* overflow: inherit; */
+        margin-bottom: 30px;
+    }
+
+    .slick-dots {
+        bottom: -60px;
+    }
+
+    .slick-track {
+        display: flex;
+        gap: 35px;
+    }   
+
+    .projectCard {
+        background: #f7f7f7;
+        border-radius: 5px;
+        border: 1px solid #e7e7e7;
+        box-shadow: 0 0px 5px rgba(0, 0, 0, 0.12);
+        display: flex !important;
+        height: 590px;
+        overflow: hidden;
+        cursor: pointer;
+
+        h3 {
+            color: #f7f7f7;
+        }
+
+        img {
+            transition: .4s ease-in-out;
+        }
+
+        .overlay-box {
+            color: #fff;
+            background: rgba(17, 60, 74, .94);
+            width: 100%;
+            height: 100%;
+            opacity: 0;
+            transition: .4s ease-in-out;
+
+            .btnProject {
+                display: inline-block;
+                padding: 15px 35px;
+                border: 1px solid #e7e7e7;
+                border-radius: 5px;
+                transition: .4s ease-in-out;
+                text-align: center;
+
+                &:hover {
+                    background: #e7e7e7;
+                    color: #113C4A;
+                }
+            }
+        }
+
+        &:hover {
+
+            img {
+                -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+                filter: grayscale(100%);
+            }
+
+            .overlay-box {
+                opacity: 1;
+            }
+
+        }
+
+    }
+
+}
+
+
+
+
+/* Contact Section */
+#contact {
+    
+    .title {
+        font-weight: 600;
+        line-height: 1em;
+        margin: 0 0 35px 0;
+        color: #113C4A;   
+    }
+
+    .text-info {
+        width: 100%;
+        max-width: 700px;
+        font-family: 'Poppins', sans-serif;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 1.5em;
+        margin: 0 auto 30px auto;
+        color: #555555;
+    }
+
+    .mini-boxes {
+
+            a {
+                display: flex;
+                align-items: center;
+                background: rgba(51,51,51,.08);
+                font-size: 18px;
+                min-width: 250px;
+                height: 22px;
+                justify-content: center;
+                text-decoration: none;
+                color: #333333;
+                padding: 24px 30px;
+                border-radius: 5px;
+                box-shadow: 0 1px 1.5px rgba(0, 0, 0, 0.15);
+                transition: .4s ease-in-out;
+
+                &:hover {
+                    background: #113C4A; 
+                    color: #ffffff;
+                }
+            }
+    }
+}
+
+
+
+/* Footer Section */
+#footer {
+
+    .container {
+        border-top: 1px solid rgba(17,60,74,.3);
+    }
+    
+}
